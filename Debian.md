@@ -31,3 +31,14 @@ sudo adduser <username> //user ekleme
 id <kullanıcı adı> // yuzur detayların ıgetirme yada
 // sudo getent passwd kullanici42
 groups <kullanıcı adı> // kulnaıcın hangi grouplarda oldugnu yazaıyor
+ sudo pkill sshd // acık ssh portların heğsine kill atar
+ pkill -KILL -u yunus // kulancıya ait oturumlara kill atar
+ tty // aktif oldgun terminal gosteirr tahimin cıktı /dev/pts/1 vs
+ ps -t pts/1 // bu oldgun temrinalin yada seciigin terminalin pıd gosteirir
+ kill -9 <pıd> buraya terminalden aldgın id gieseen oturumu sonlandırıp kill ceker
+ ps -t
+    PID TTY      STAT   TIME COMMAND
+    173 pts/0    Ss     0:00 -zsh
+    303 pts/0    R+     0:00 ps -t // 
+//
+pkill -t pts/1  //buda kill cekiyor
